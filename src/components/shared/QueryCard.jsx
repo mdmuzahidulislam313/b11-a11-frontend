@@ -39,7 +39,7 @@ const QueryCard = memo(({ query, onRecommendClick }) => {
                     </div>
                     <span className="text-xs text-slate-500">{dayjs(query.createdAt).fromNow()}</span>
                 </div>
-                // this is done
+
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mt-4 gap-2">
                     <div className="badge badge-primary text-white text-xs sm:text-sm">{query.recommendationCount} recommendations</div>
                     {onRecommendClick ? (
