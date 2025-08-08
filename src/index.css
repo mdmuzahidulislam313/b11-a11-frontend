@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f1f5f9;
+}
+
+.page-container {
+  @apply container mx-auto px-4 py-8 min-h-screen;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-bold mb-8 text-center text-slate-800;
+}
+
+.responsive-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.form-label {
+  @apply block text-sm font-medium mb-2 text-slate-700;
+}
+
+.form-input {
+  @apply w-full rounded-lg border bg-white px-4 py-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors;
+}
+
+.form-error {
+  @apply text-red-500 text-sm mt-1;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-sm border hover:shadow-md transition-shadow;
+}
+
+.card-body {
+  @apply p-6;
+}
+
+.card-title {
+  @apply text-lg font-semibold text-slate-800 mb-2;
+}
+
+/* Button text fixes */
+.btn {
+  font-weight: 500 !important;
+}
